@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Lista de Itens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Minha Lista de Itens</h1>
+
+  <form>
+    <label for="input-titulo">Título:</label>
+    <input type="text" id="input-titulo" placeholder="Título" required>
+
+    <label for="input-data">Data de Publicação:</label>
+    <input type="date" id="input-data" placeholder="Data de Publicação" required>
+
+    <label for="input-descricao">Descrição:</label>
+    <input type="text" id="input-descricao" placeholder="Descrição" required>
+
+    <label for="input-autor">Autor:</label>
+    <input type="text" id="input-autor" placeholder="Autor" required>
+
+    <button type="button" onclick="addItem()">Adicionar</button>
+  </form>
+
+  <ul id="lista-itens"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
